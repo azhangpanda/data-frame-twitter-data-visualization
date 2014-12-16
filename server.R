@@ -2,7 +2,7 @@
 require(mosaic)
 require(rJava)
 require(repmis)
-twitter=source_DropboxData(file = "eqTwitter", key = "qc0mmglrkqklfk5", sep = ",", header = TRUE, fileEncoding="UCS-2LE")
+twitter=source_DropboxData(file = "eqTwitter", key = "qc0mmglrkqklfk5", sep = ",", header = TRUE, fileEncoding="latin1")
 twitter=(select(twitter, name, city, X.1))
 library(ggplot2)
 library(shiny)
