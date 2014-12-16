@@ -1,7 +1,7 @@
 # server.R
 require(mosaic)
 #twitter=read.csv("data/eqTwitter")
-twitter=source_DropboxData(file = "eqTwitter", key = "qc0mmglrkqklfk5", sep = ",", header = TRUE, ,fileEncoding="UCS-2LE")
+twitter=source_DropboxData(file = "eqTwitter", key = "qc0mmglrkqklfk5", sep = ",", header = TRUE)
 #twitter=read.csv("~/Documents/academic/fall 14/data science/dataframe/data/eqTwitter",header=TRUE,fileEncoding="UCS-2LE")
 twitter=(select(twitter, name, city, X.1))
 #names(twitter) <- c("Trend", "City", "Date")
